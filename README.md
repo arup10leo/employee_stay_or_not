@@ -6,7 +6,9 @@ Objective: Figure out which variables have a direct and clear impact on employee
 
 ## Tech Stack
 
-Pandas, Scikit-Learn, NumPy, matplotlib, seaborn
+Pandas, Scikit-Learn, NumPy, matplotlib, seaborn 
+
+requiremen text file conatains necessary libraries with their versions.
 
 
 ## Demo
