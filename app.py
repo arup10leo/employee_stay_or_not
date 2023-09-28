@@ -13,7 +13,7 @@ st.set_page_config(page_title="Employee Prediction App")
 
 st.title("Will Employee stay or leave?")
 
-col1, col2, col3 = st.column(3)
+col1, col2, col3 = st.columns(3)
 with col1:
 #satisfacation
     satisfaction = st.number_input('Satisfaction level')
