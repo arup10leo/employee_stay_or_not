@@ -15,33 +15,33 @@ st.title("Will Employee stay or leave?")
 
 
 #satisfacation
-    satisfaction = st.number_input('Satisfaction level')
+satisfaction = st.number_input('Satisfaction level')
 
 #last evaluation
-    evaluation = st.number_input('last evaluation')
+evaluation = st.number_input('last evaluation')
 
 #projects
-    project=st.selectbox('No. of project', df['number_project'].unique())
+project=st.selectbox('No. of project', df['number_project'].unique())
 
 #avg_monthly_hrs
-    avg_month_hrs=st.slider('Average Monthly Hours',80.0,350.0)
+avg_month_hrs=st.slider('Average Monthly Hours',80.0,350.0)
 
 #time_spend
-    time_spend=st.slider('Time Spent in the company',1.0,12.0)
+time_spend=st.slider('Time Spent in the company',1.0,12.0)
 
 #work_accident
-    work_accident=st.selectbox('Work accident', df['Work_accident'].unique())
+work_accident=st.selectbox('Work accident', df['Work_accident'].unique())
 
 #promotion_last_5years
-    promotion_last_5years=st.selectbox('Promotion in last 5 years', df['promotion_last_5years'].unique())
+promotion_last_5years=st.selectbox('Promotion in last 5 years', df['promotion_last_5years'].unique())
 
 
 #Department
-    Department=st.selectbox('Department', df['Department'].unique())
+Department=st.selectbox('Department', df['Department'].unique())
 
 
 #salary
-    salary=st.selectbox('salary | 0->Low | 1->Medium | 2->High', df['salary'].unique())
+salary=st.selectbox('salary | 0->Low | 1->Medium | 2->High', df['salary'].unique())
 
 
 
