@@ -13,35 +13,33 @@ st.set_page_config(page_title="Employee Prediction App")
 
 st.title("Will Employee stay or leave?")
 
-col1, col2, col3 = st.columns(3)
 
-with col1:
 #satisfacation
     satisfaction = st.number_input('Satisfaction level')
-with col1:
+
 #last evaluation
     evaluation = st.number_input('last evaluation')
-with col1:
+
 #projects
     project=st.selectbox('No. of project', df['number_project'].unique())
-with col2:
+
 #avg_monthly_hrs
     avg_month_hrs=st.slider('Average Monthly Hours',80.0,350.0)
-with col2:
+
 #time_spend
     time_spend=st.slider('Time Spent in the company',1.0,12.0)
-with col2:
+
 #work_accident
     work_accident=st.selectbox('Work accident', df['Work_accident'].unique())
-with col3:
+
 #promotion_last_5years
     promotion_last_5years=st.selectbox('Promotion in last 5 years', df['promotion_last_5years'].unique())
 
-with col3:
+
 #Department
     Department=st.selectbox('Department', df['Department'].unique())
 
-with col3:
+
 #salary
     salary=st.selectbox('salary | 0->Low | 1->Medium | 2->High', df['salary'].unique())
 
